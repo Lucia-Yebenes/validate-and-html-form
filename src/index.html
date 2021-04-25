@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Validacion de formulario</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -19,11 +19,11 @@
         <div class="tit border-bottom bg-light mb-3 px-3">
           <h1 class="py-3">Payments form example</h1>
         </div>
-        <div class="alert alert-danger mx-3" role="alert">
+        <div id="myAlert" class="alert alert-danger mx-3" role="alert">
           Some fields are missing
         </div>
 
-        <form>
+        <form id="form">
           <div class="row mx-3">
             <div class="form-group col-sm-12 col-md-5">
               <label for="InputCard">Card</label>
@@ -92,7 +92,7 @@
                 id="PostalCode"
               />
             </div>
-
+            <!--tipos de tj-->
             <div class="col-sm-12 col-md-6 text-white">
               <p class="text-dark">We accept:</p>
               <div
@@ -103,7 +103,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="CardMaster"
+                    name="Card"
                     id="CardMaster"
                     value="option1"
                   />
@@ -116,7 +116,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="CardVisa"
+                    name="Card"
                     id="CardVisa"
                     value="option2"
                   />
@@ -129,7 +129,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="CardAmerican"
+                    name="Card"
                     id="CardAmerican"
                     value="option3"
                   />
@@ -142,7 +142,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="CardDiners"
+                    name="Card"
                     id="CardDiners"
                     value="option4"
                   />
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </div>
-
+            <!--termina tj-->
             <div class="form-group col-sm-12 col-md-6">
               <label for="Message">Message</label>
               <textarea
@@ -171,7 +171,7 @@
               <button type="button" class="btn btn-secondary m-2">
                 Cancel
               </button>
-              <button type="button" class="btn btn-primary m-2">Save</button>
+              <button type="submit" class="btn btn-primary m-2">Save</button>
             </div>
           </div>
         </form>
